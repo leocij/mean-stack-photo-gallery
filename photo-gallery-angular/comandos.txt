@@ -1,0 +1,30 @@
+
+## https://www.youtube.com/watch?v=4MEsROoq5Qw&feature=em-uploademail
+1:21:31
+
+ng new photo-gallery-angular --routing
+
+ng serve
+
+ng g c components/navigation
+
+ng g c components/photo-form
+
+ng g c components/photo-preview
+
+ng g c components/photo-list
+
+ng g s services/photo
+
+ng g i interfaces/photo
+
+npm i bootswatch
+
+## Adiciona o link do bootswatch no angular.json
+"styles": [
+              "node_modules/bootswatch/dist/materia/bootstrap.min.css",
+              "src/styles.css"
+            ],
+
+## Para produção
+ng build

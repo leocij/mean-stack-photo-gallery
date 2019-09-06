@@ -1,0 +1,104 @@
+
+## Video aula
+https://www.youtube.com/watch?v=OMBwyCNmoPY&feature=em-uploademail
+
+npm init -y
+
+npm i typescript -D
+
+npx tsc --init
+
+## Em tsconfig.json altere para nova versão e descomente alguns
+"target": "es2019",
+"moduleResolution": "node",
+
+npm i express
+
+npm i @types/express -D
+
+## Instale o modulo no vscode
+ES7 React/Redux/GraphQL/React-Native snippets
+
+## Descomente e altere estas opçõs no arquivo tsconfig.json
+"outDir": "./dist/",
+"rootDir": "./src/",
+
+## Crie o script no package.json
+"scripts": {
+    "build": "tsc"
+  },
+
+npm run build
+
+node dist/index.js
+
+npm i rimraf
+
+## Crie o script no package.json
+"scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+  },
+
+npm run clean
+
+## Crie o script no package.json
+"scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "start": "npm run build && node dist/index.js",
+  },
+
+npm start
+
+npm i nodemon -D
+
+## Crie o script no package.json
+"scripts": {
+    ...,
+    "dev": "nodemon src/index.ts"
+  },
+
+## Crie e configure nodemon.json
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": [
+    "src/**/*.spec.ts"
+  ],
+  "exec": "ts-node"
+}
+
+npm i ts-node
+
+npm run dev
+
+## plugin vscode
+Material Icon Theme
+
+npm i morgan
+
+npm i @types/morgan -D
+
+npm i mongoose
+
+npm i @types/mongoose -D
+
+npm i multer
+
+npm i @types/multer -D
+
+npm i uuid
+
+npm i @types/uuid -D
+
+npm i fs-extra
+
+npm i @types/fs-extra -D
+
+npm i cors
+
+npm i @types/cors -D
+
+## Para produção
+npm run build

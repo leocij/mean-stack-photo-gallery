@@ -1,0 +1,1 @@
+# mean-stack-photo-gallery
